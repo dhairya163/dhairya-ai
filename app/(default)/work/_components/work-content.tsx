@@ -11,9 +11,13 @@ export async function WorkContent() {
 
   return (
     <div>
-      <HeroSection title={data.mainTitle} description={data.mainTitle} />
-      <ResumeSection resumeData={data.resume} />
-      <TechStackSection techStackData={data.techStack} />
+      <HeroSection
+        name="Tech Innovator"
+        title={data.mainTitle}
+        description={data.mainTitle}
+      />
+      {/* <ResumeSection resumeData={data.resume} /> */}
+      {/* <TechStackSection techStackData={data.techStack} /> */}
     </div>
   );
 }

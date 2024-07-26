@@ -6,10 +6,11 @@ export default function Home() {
   return (
     <>
       <HeroSection
+        name={siteConfig.name}
         title={siteConfig.title}
         description={siteConfig.description}
       />
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   );
 }

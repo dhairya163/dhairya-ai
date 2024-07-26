@@ -18,7 +18,8 @@ export default function Header() {
               <IconBox />
             </Link>
           </div>
-          <nav className="hidden md:flex md:grow">
+          {/* Hidding for now */}
+          <nav className="hidden">
             <ul className="flex flex-wrap items-center justify-center grow">
               {navLinks.map((link) => (
                 <li key={link.href}>

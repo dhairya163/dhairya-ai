@@ -1,24 +1,36 @@
-# Next Blog Template
+# Dhairya's Blog
 
 - **Framework:** Next.js
 - **Headless CMS**: Sanity.io
 - **Deployment:** Vercel
-- **Styling:** Tailwind CSS, shadcn/ui & Aceternity UI.
+- **Styling:** Tailwind CSS, shadcn/ui & Aceternity UI
 - **Analytics:** Vercel Analytics
 
 ## Running Locally
 
 This application requires Node.js v18.17+.
 
-`git clone https://github.com/kaganmert/next-shadcn-sanity-blog`
+1. Clone the repository:
+   ```
+   git clone https://github.com/dhairya163/dhairya-ai.git
+   ```
 
-`cd next-shadcn-sanity-blog`
+2. Navigate to the project directory:
+   ```
+   cd dhairya-ai
+   ```
 
-`pnpm install`
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-`pnpm run dev`
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-Create a .env file similar to .env.example.
+5. Create a `.env` file in the root directory and add the necessary environment variables (refer to `.env.example` for guidance).
 
 ## License
 

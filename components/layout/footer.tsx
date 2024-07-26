@@ -22,11 +22,11 @@ const footerGroups = [
   },
   {
     label: "Contact",
-    links: [{ label: "GitHub", href: "https://github.com/kaganmert" }],
+    links: [{ label: "GitHub", href: "https://github.com/dhairya163" }],
   },
   {
     label: "Other",
-    links: [{ label: "GitHub", href: "https://github.com/kaganmert" }],
+    links: [{ label: "GitHub", href: "https://github.com/dhairya163" }],
   },
 ];
 
@@ -43,7 +43,7 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/dhairya-aggarwal/",
     icon: <IconBrandLinkedin />,
   },
   {
@@ -65,7 +65,7 @@ export function SiteFooter() {
               <div className="mb-4 text-sm">
                 <div className="mt-2 text-xl">{siteConfig.title}</div>
                 <p>📱 {siteConfig.contacts.phone}</p>
-                <p>✉️ {siteConfig.contacts.email}</p>
+                <p className="flex items-center text-center whitespace-nowrap">✉️ {siteConfig.contacts.email}</p>
               </div>
             </Link>
             <ul className="flex">

@@ -12,13 +12,13 @@ export default function Newsletter() {
             </h2>
             <p className="mb-8 text-lg">
               Stay in the loop with articles, courses, and much more by
-              subscribing to our newsletter.
+              subscribing to my newsletter.
             </p>
             <form className="inline-flex w-full max-w-sm">
               <div className="flex flex-col justify-center w-full mx-auto sm:flex-row sm:max-w-none">
                 <Input
                   id="email"
-                  placeholder="johndoe@example.com"
+                  placeholder="dhairya@example.com"
                   type="email"
                 />
               </div>

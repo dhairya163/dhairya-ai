@@ -6,6 +6,7 @@ import { Highlight, HeroHighlight } from "./ui/hero-highlight";
 import { motion } from "framer-motion";
 
 interface HeroSectionProps {
+  name: string;
   title: string;
   description: string;
   buttonText?: string;
@@ -13,6 +14,7 @@ interface HeroSectionProps {
 }
 
 function HeroSection({
+  name,
   title,
   description,
   buttonText,
@@ -38,9 +40,29 @@ function HeroSection({
             className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
           >
             <Highlight className="text-black dark:text-white">
-              {title}
+              {name}
             </Highlight>
           </motion.h1>
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: [20, -5, 0],
+            }}
+            transition={{
+              duration: 0.5,
+              ease: [0.4, 0.0, 0.2, 1],
+              delay: 0.2,
+            }}
+            className="mt-4 text-xl px-4 md:text-3xl lg:text-4xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+          >
+            <Highlight className="text-black dark:text-white">
+              {title}
+            </Highlight>
+          </motion.h2>
           <motion.p
             initial={{
               opacity: 0,
@@ -53,6 +75,7 @@ function HeroSection({
             transition={{
               duration: 0.5,
               ease: [0.4, 0.0, 0.2, 1],
+              delay: 0.4,
             }}
             className="mt-4 text-md px-4 lg:text-xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
           >
