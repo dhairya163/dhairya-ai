@@ -91,6 +91,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "meteor-effect": "meteor 5s linear infinite",
       },
+      listStyleType: {
+        disc: 'disc',
+        decimal: 'decimal',
+      },
     },
   },
   plugins: [

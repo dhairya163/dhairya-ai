@@ -14,6 +14,10 @@ const StyledParagraph: React.FC = ({ children }: any) => {
   return <p className="my-2 text-base leading-relaxed">{children}</p>;
 };
 
+const StyledBulletList: React.FC = ({ children }: any) => {
+  return <ul className="list-disc list-inside my-2">{children}</ul>;
+};
+
 export const ptComponents: PortableTextComponents = {
   types: {
     code: Code,
@@ -29,6 +33,7 @@ export const ptComponents: PortableTextComponents = {
   },
 
   list: {
+    bullet: StyledBulletList,
     schnauzer: SchnauzerList,
   },
 

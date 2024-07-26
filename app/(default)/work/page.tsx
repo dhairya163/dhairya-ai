@@ -1,13 +1,10 @@
 "use client";
-import { Suspense } from "react";
 import { WorkContent } from "./_components/work-content";
 
 export default function Page() {
   return (
-    <div>
-      <Suspense fallback={<h2>Loading...</h2>}>
+    <div className="min-h-screen w-full flex items-center justify-center">
         <WorkContent />
-      </Suspense>
     </div>
   );
 }

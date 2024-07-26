@@ -33,7 +33,7 @@ export default function ResumeSection({ resumeData }: ResumeSectionProps) {
           Resume
         </motion.h1>
         <ul className="space-y-8">
-          {resumeData.map((item) => (
+          {resumeData?.map((item) => (
             <li key={item._key} className="relative group">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
@@ -43,6 +43,8 @@ export default function ResumeSection({ resumeData }: ResumeSectionProps) {
                     src={urlForImage(item.image)}
                     alt={`${item.title} Logo`}
                     className="rounded-full"
+                    loader={({ src }) => src}
+                    unoptimized
                   />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -50,7 +52,7 @@ export default function ResumeSection({ resumeData }: ResumeSectionProps) {
                     {item.title}
                   </h3>
                   <p className="text-sm ">
-                    {item.startDate} - {item.endDate}
+                    {item.startDate} - {item.isCurrent ? "Present" : item.endDate}
                   </p>
                   <div className="mt-2 text-sm ">
                     <PortableText
