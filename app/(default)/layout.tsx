@@ -7,20 +7,21 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/footer";
 import Header from "@/components/layout/header";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"), // Change to your project's domain
+  metadataBase: new URL("https://dhairya.ai"),
   title: {
-    default: "Next-Shadcn-Sanity Blog",
-    template: "%s | Next-Shadcn-Sanity Blog",
+    default: "dhairya-ai",
+    template: "%s | dhairya-ai",
   },
   description:
     "A modern blogging platform powered by Next.js 14, ShadcnUI, and Sanity.io.",
   openGraph: {
-    title: "Next-Shadcn-Sanity Blog",
+    title: "dhairya-ai",
     description:
       "Explore the future of blogging with our platform powered by Next.js 14, ShadcnUI, and Sanity.io.",
-    url: "https://yourdomain.com", // Change to your project's URL
-    siteName: "Next-Shadcn-Sanity Blog",
+    url: "https://dhairya.ai",
+    siteName: "Dhairya Aggarwal",
     locale: "en_US",
     type: "website",
   },
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Next-Shadcn-Sanity Blog",
+    title: "dhairya-ai",
     card: "summary_large_image",
   },
   verification: {

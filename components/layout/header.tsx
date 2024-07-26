@@ -11,6 +11,7 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="absolute z-30 w-full">
+      <script defer data-domain="dhairya.ai" src="https://plausible.io/js/script.local.js"></script>
       <div className="max-w-6xl px-4 mx-auto sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-1">
